@@ -3,6 +3,7 @@ import "./App.css";
 import questions from "./Data";
 import instagram from "./assets/instagram.png";
 import Linkdein from "./assets/linkedin.png";
+import github from "./assets/github.png";
 
 function App() {
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
@@ -17,7 +18,10 @@ function App() {
   const handleNext = () => {
     if (selectedOptionIndex !== null) {
       // Check if selected option is correct and update score
-      if (questions[currentQuestionIndex].answer === questions[currentQuestionIndex].options[selectedOptionIndex]) {
+      if (
+        questions[currentQuestionIndex].answer ===
+        questions[currentQuestionIndex].options[selectedOptionIndex]
+      ) {
         setScore((prevScore) => prevScore + 1); // Increment score
       }
 
@@ -37,23 +41,57 @@ function App() {
     <>
       {showResult ? (
         <div className="bg-blue-300 text-white flex flex-col justify-center items-center h-screen ">
-          <h1 className="text-4xl text-black font-mono font-bold mb-2">Simple Quiz app</h1>
+          <h1 className="text-4xl text-black font-mono font-bold mb-2">
+            Simple Quiz app
+          </h1>
           <div className="flex flex-col justify-center items-center bg-white h-[300px] w-[300px] ">
-            <h1 className="bold text-3xl bg-red-600 mb-5 rounded-lg">Congratulations</h1>
-            <h1 className="text-black text-2xl">Your score is {score} out of {questions.length}</h1>
-            <button onClick={() => window.location.reload()} className="mt-2 text-black p-2 rounded focus:outline-none hover:bg-gray-400 transition bg-cyan-300">Play again</button>
-            <span className="text-black font-serif mt-9 ml-7">made by Biyash Shrestha</span>
-            <div className="logos flex gap-0 ">   
-            <img src={instagram} className="mt-2 w-14 h-auto hover:scale-125" onClick={() => window.open('https://www.instagram.com/biyash10/')}/>
-            <img src={Linkdein} className="mt-2 w-9 h-auto hover:scale-125"onClick={() => window.open('https://www.linkedin.com/in/biyash-shrestha-375593278/')} />
+            <h1 className="bold text-3xl bg-red-600 mb-5 rounded-lg">
+              Congratulations
+            </h1>
+            <h1 className="text-black text-2xl">
+              Your score is {score} out of {questions.length}
+            </h1>
+            <button
+              onClick={() => window.location.reload()}
+              className="mt-2 text-black p-2 rounded focus:outline-none hover:bg-gray-400 transition bg-cyan-300"
+            >
+              Play again
+            </button>
+            <span className="text-black font-serif mt-9 ml-7">
+              made by Biyash Shrestha
+            </span>
+            <div className="logos flex gap-0 ">
+              <img
+                src={instagram}
+                className="mt-2 w-14 h-auto hover:scale-125"
+                onClick={() =>
+                  window.open("https://www.instagram.com/biyash10/")
+                }
+              />
+              <img
+                src={Linkdein}
+                className="mt-2 w-9 h-auto hover:scale-125"
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/biyash-shrestha-375593278/"
+                  )
+                }
+              />
+              <img
+                src={github}
+                className="mt-2 w-9 h-auto hover:scale-125"
+                onClick={() => window.open("https://github.com/im-biyash")}
+              />
             </div>
             {/* https://www.linkedin.com/in/biyash-shrestha-375593278/ */}
           </div>
         </div>
       ) : (
         <div className="bg-blue-300 text-white flex flex-col justify-center items-center h-screen">
-          <h1 className="text-3xl text-black font-mono font-bold">Simple Quiz app</h1>
-          <div className="question_card bg-white flex flex-col justify-start h-[400px] w-[500px] border-b-black shadow-md p-4">
+          <h1 className="text-3xl text-black font-mono font-bold">
+            Simple Quiz app
+          </h1>
+          <div className="question_card bg-white bg-opacity-400 flex flex-col justify-start h-[400px] w-[500px] border-b-black shadow-md p-4 rounded-t-2xl rounded-b-2xl">
             <div className="questions mb-4">
               <h2 className="text-xl text-black mb-2">
                 {questions[currentQuestionIndex].question}
@@ -63,8 +101,10 @@ function App() {
               {questions[currentQuestionIndex].options.map((option, index) => (
                 <button
                   key={index}
-                  className={` text-black p-2 rounded focus:outline-none hover:bg-gray-400 transition ${
-                    selectedOptionIndex === index ? "bg-gray-600" : "bg-gray-300"
+                  className={` text-black p-2 rounded focus:outline-none hover:bg-gray-400  ${
+                    selectedOptionIndex === index
+                      ? "bg-gray-400"
+                      : "bg-gray-300"
                   }`}
                   onClick={() => handleClick(index)}
                 >

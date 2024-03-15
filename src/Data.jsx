@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "who is the highest goal scorere of football till now?",
+    question: "who is the highest goal scorerer of world Cup till now?",
     options: ["Ronaldinho", "mirosalv klose", "David villa", "Gerd muller"],
     answer: "mirosalve klose",
   },
