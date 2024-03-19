@@ -91,7 +91,7 @@ function App() {
           <h1 className="text-3xl text-black font-mono font-bold">
             Simple Quiz app
           </h1>
-          <div className="question_card bg-[#0a192f] bg-opacity-400 flex flex-col justify-start max-h-[80vh]  md:w-[500px] border-black shadow-md p-4 rounded-t-2xl rounded-b-2xl overflow-auto">
+          <div className="question_card bg-white bg-opacity-400 flex flex-col justify-start max-h-[80vh]  md:w-[500px] border-black shadow-md p-4 rounded-t-2xl rounded-b-2xl overflow-auto">
             <div className="questions mb-4">
               <h2 className="text-xl text-black mb-2">
                 {questions[currentQuestionIndex].question}
