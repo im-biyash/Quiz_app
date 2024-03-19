@@ -1,7 +1,7 @@
 const questions = [
   {
-    question: "What is the most beautiful thing in sushma ? ",
-    options: ["Her eyes", "Her smile", "Her personality", "Her kindess"],
+    question: "What is the most beautiful thing in Human ? ",
+    options: [" eyes", " smile", "personality", "kindess"],
     answer: "Her eyes",
   },
   {
