@@ -1,8 +1,8 @@
 const questions = [
   {
-    question: "What is the most beautiful thing in sushma ",
+    question: "What is the most beautiful thing in sushma ? ",
     options: ["Her eyes", "Her smile", "Her personality", "Her kindess"],
-    answer: "mirosalve klose",
+    answer: "Her eyes",
   },
   {
     question: "In 'Demon Slayer,' which Hashira has a dual-colored haori and uses both the Breath of Water and Breath of Wind techniques?",
