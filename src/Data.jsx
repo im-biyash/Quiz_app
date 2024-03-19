@@ -1,7 +1,7 @@
 const questions = [
   {
-    question: "who is the highest goal scorerer of world Cup till now?",
-    options: ["Ronaldinho", "mirosalv klose", "David villa", "Gerd muller"],
+    question: "What is the most beautiful thing in sushma ",
+    options: ["Her eyes", "Her smile", "Her personality", "Her kindess"],
     answer: "mirosalve klose",
   },
   {
