@@ -89,7 +89,7 @@ function App() {
       ) : (
         <div className="bg-blue-300 text-white flex flex-col justify-center items-center h-screen">
           <h1 className="text-3xl text-black font-mono font-bold">
-            Simple Quiz app
+            Simple Quiz app by biyash
           </h1>
           <div className="question_card bg-white bg-opacity-400 flex flex-col justify-start max-h-[80vh]  md:w-[500px] border-black shadow-md p-4 rounded-t-2xl rounded-b-2xl overflow-auto">
             <div className="questions mb-4">
