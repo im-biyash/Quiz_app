@@ -43,7 +43,7 @@ const questions = [
       "Who is known as the 'father of modern computer science' and wrote the first computer program?",
     options: [
       "Alan Turing",
-      "Charles Babbage",
+      "Charles Babbe",
       "Ada Lovelace",
       "John von Neumann",
     ],
