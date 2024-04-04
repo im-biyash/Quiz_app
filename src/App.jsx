@@ -70,7 +70,7 @@ function App() {
               />
               <img
                 src={Linkdein}
-                className="mt-2 w-9 h-auto hover:scale-125"
+                className="mt-2 w-10 h-auto hover:scale-125"
                 onClick={() =>
                   window.open(
                     "https://www.linkedin.com/in/biyash-shrestha-375593278/"
